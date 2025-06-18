@@ -1,9 +1,38 @@
-{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {%extends 'base.html' %}
+    {% block content %}
 
-{% block content %}
-<div class="text-center">
-    <h2>Welcome to Sridhar Institute of Data Science</h2>
-    <p><a href="/feedback" class="btn btn-success mt-3">Give Feedback</a></p>
-    <p><a href="/admin" class="btn btn-primary">View Feedbacks (Admin)</a></p>
+<h2 class="mb-4 text center">Welcome To Student Feedback Portal</h2>
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card shadow-lg">
+            <img src="https://images.pexels.com/photos/8499580/pexels-photo-8499580.jpeg" class="card-img-top" alt="College Image">
+            <div class="card-body">
+                <h5 class="card-title">VASAVI INSTITUTE OF TECHNOLOGY</h5>
+                <p class="card-text">
+                    In Tadepalligudem, you're likely referring to Sri Vasavi Engineering College and pharmacy. It’s a well-established institution offering engineering and pharmacy programs, and it’s known for its academic environment and placement support. The college is affiliated with JNTUK and holds accreditations from NAAC and NBA, reflecting its commitment to quality education.
+                </p>
+                <ul class="list-group list-group-flush mb-3">
+                    <li class="list-group-item">Modern Labs & Infrastructure</li>
+                    <li class="list-group-item">Experienced</li>
+                    <li class="list-group-item">Industry - Ready Curriculm</li>
+                    <li class="list-group-item">Placement Assistance</li>
+                    <li class="list-group-item">Regular Workshops & Seminars</li>
+                </ul>
+                <a href="/feedback" class="btn btn-primary">Submit Feedback</a>
+                <a href="/admin" class="btn btn-primary">Admin Panel</a>
+            </div>
+        </div>
+    </div>
 </div>
-{% endblock %}
+{%endblock%}
+</body>
+</html>
